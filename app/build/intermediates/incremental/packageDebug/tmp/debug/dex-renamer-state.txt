@@ -1,0 +1,4 @@
+#Tue Nov 17 09:12:39 WAT 2020
+base.0=D\:\\6-DTSE\\2-proposed sol\\0-forum\\AudioKit-master (1)\\AudioKit-master\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

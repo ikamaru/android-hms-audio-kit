@@ -1,0 +1,234 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.huawei.hms.audiokitdemotest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml
+10
+11    <!-- Need to access the network and obtain network status information -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:7:22-76
+14
+15    <!-- android4.4 To operate SD card, you need to apply for the following permissions -->
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:10:5-81
+16-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:11:5-80
+17-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:11:22-77
+18    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE" />
+18-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:12:5-77
+18-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:12:22-74
+19
+20    <!-- 9.0 Adaptation -->
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:15:5-77
+21-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:15:22-74
+22
+23    <!-- Play songs to prevent CPU from sleeping. -->
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:18:5-68
+24-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:18:22-65
+25
+26    <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
+27    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 应用市场9.0版本必须使用该权限获取用户的服务地 -->
+27-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:16:5-83
+27-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:16:22-80
+28    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+28-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:18:5-106
+28-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:18:22-103
+29
+30    <application
+30-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:19:5-34:19
+31        android:allowBackup="false"
+31-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:20:9-36
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.1.0] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+33-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:21:9-35
+34        android:icon="@mipmap/ic_launcher"
+34-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:22:9-43
+35        android:label="@string/app_name"
+35-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:23:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:24:9-54
+37        android:supportsRtl="true"
+37-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:25:9-35
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme" >
+39-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:26:9-40
+40        <activity android:name="com.huawei.hms.audiokitdemotest.MainActivity" >
+40-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:27:9-33:20
+40-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:27:19-47
+41            <intent-filter>
+41-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:28:13-32:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:29:17-69
+42-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:29:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:31:17-77
+44-->D:\6-DTSE\2-proposed sol\0-forum\AudioKit-master (1)\AudioKit-master\app\src\main\AndroidManifest.xml:31:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <meta-data
+48-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:12:9-14:64
+49            android:name="com.huawei.hms.client.service.name:huawei_module_audiokit"
+49-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:13:13-85
+50            android:value="huawei_module_audiokit:1.0.0.302" />
+50-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:14:13-61
+51        <meta-data
+51-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:15:9-17:33
+52            android:name="com.huawei.hms.min_api_level:huawei_module_audiokit:huawei_module_audiokit"
+52-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:16:13-102
+53            android:value="5" /> <!-- 播放服务 -->
+53-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:17:13-30
+54        <service
+54-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:19:9-22:43
+55            android:name="com.huawei.hms.audiokit.player.manager.service.MediaPlaybackSDKService"
+55-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:20:13-98
+56            android:exported="false"
+56-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:21:13-37
+57            android:stopWithTask="true" />
+57-->[com.huawei.hms:audiokit-player:1.0.0.302] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\1ecbac40cd183a22ed83bb03847d2113\jetified-audiokit-player-1.0.0.302\AndroidManifest.xml:22:13-40
+58        <!--
+59        为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据，
+60        流水线打包时会替换成HMSVER对应的版本号，不要手动修改
+61        -->
+62        <meta-data
+62-->[com.huawei.hms:base:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\5c07214a4d88fbfea02ec0c2c8091346\jetified-base-4.0.4.300\AndroidManifest.xml:18:9-20:46
+63            android:name="com.huawei.hms.client.service.name:base"
+63-->[com.huawei.hms:base:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\5c07214a4d88fbfea02ec0c2c8091346\jetified-base-4.0.4.300\AndroidManifest.xml:19:13-67
+64            android:value="base:4.0.4.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+64-->[com.huawei.hms:base:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\5c07214a4d88fbfea02ec0c2c8091346\jetified-base-4.0.4.300\AndroidManifest.xml:20:13-43
+65        <meta-data
+65-->[com.huawei.hms:base:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\5c07214a4d88fbfea02ec0c2c8091346\jetified-base-4.0.4.300\AndroidManifest.xml:23:9-25:33
+66            android:name="com.huawei.hms.min_api_level:base:hmscore"
+66-->[com.huawei.hms:base:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\5c07214a4d88fbfea02ec0c2c8091346\jetified-base-4.0.4.300\AndroidManifest.xml:24:13-69
+67            android:value="1" />
+67-->[com.huawei.hms:base:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\5c07214a4d88fbfea02ec0c2c8091346\jetified-base-4.0.4.300\AndroidManifest.xml:25:13-30
+68        <meta-data
+68-->[com.huawei.hms:dynamic-api:1.0.13.303] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\924c1d902a6443eae90c396dd4330dff\jetified-dynamic-api-1.0.13.303\AndroidManifest.xml:12:9-14:54
+69            android:name="com.huawei.hms.client.service.name:dynamic-api"
+69-->[com.huawei.hms:dynamic-api:1.0.13.303] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\924c1d902a6443eae90c396dd4330dff\jetified-dynamic-api-1.0.13.303\AndroidManifest.xml:13:13-74
+70            android:value="dynamic-api:1.0.13.303" />
+70-->[com.huawei.hms:dynamic-api:1.0.13.303] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\924c1d902a6443eae90c396dd4330dff\jetified-dynamic-api-1.0.13.303\AndroidManifest.xml:14:13-51
+71        <meta-data
+71-->[com.huawei.hms:dynamic-api:1.0.13.303] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\924c1d902a6443eae90c396dd4330dff\jetified-dynamic-api-1.0.13.303\AndroidManifest.xml:15:9-17:33
+72            android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader"
+72-->[com.huawei.hms:dynamic-api:1.0.13.303] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\924c1d902a6443eae90c396dd4330dff\jetified-dynamic-api-1.0.13.303\AndroidManifest.xml:16:13-96
+73            android:value="2" /> <!-- 用于判断是否集成了本lib -->
+73-->[com.huawei.hms:dynamic-api:1.0.13.303] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\924c1d902a6443eae90c396dd4330dff\jetified-dynamic-api-1.0.13.303\AndroidManifest.xml:17:13-30
+74        <meta-data
+74-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:23:9-25:35
+75            android:name="availableLoaded"
+75-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:24:13-43
+76            android:value="yes" />
+76-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:25:13-32
+77
+78        <provider
+78-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:27:9-32:20
+79            android:name="com.huawei.hms.update.provider.UpdateProvider"
+79-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:28:13-73
+80            android:authorities="com.huawei.hms.audiokitdemotest.hms.update.provider"
+80-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:29:13-71
+81            android:exported="false"
+81-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:30:13-37
+82            android:grantUriPermissions="true" >
+82-->[com.huawei.hms:availableupdate:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\d75d96b40f5de183106a55a79f21736c\jetified-availableupdate-4.0.4.300\AndroidManifest.xml:31:13-47
+83        </provider>
+84
+85        <activity
+85-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:10:9-21:20
+86            android:name="com.huawei.hms.activity.BridgeActivity"
+86-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:11:13-66
+87            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout"
+87-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:12:13-124
+88            android:excludeFromRecents="true"
+88-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:13:13-46
+89            android:exported="false"
+89-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:14:13-37
+90            android:hardwareAccelerated="true"
+90-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:15:13-47
+91            android:screenOrientation="behind"
+91-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:16:13-47
+92            android:theme="@android:style/Theme.Translucent" >
+92-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:17:13-61
+93            <meta-data
+93-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:18:13-20:77
+94                android:name="hwc-theme"
+94-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:19:17-41
+95                android:value="androidhwext:style/Theme.Emui.Translucent" />
+95-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:20:17-74
+96        </activity>
+97        <activity
+97-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:22:9-25:20
+98            android:name="com.huawei.hms.activity.EnableServiceActivity"
+98-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:23:13-73
+99            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout" >
+99-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:24:13-106
+100        </activity>
+101
+102        <provider
+102-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:10:9-13:40
+103            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+103-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:11:13-90
+104            android:authorities="com.huawei.hms.audiokitdemotest.AGCInitializeProvider"
+104-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:12:13-73
+105            android:exported="false" />
+105-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:13:13-37
+106
+107        <service
+107-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:15:9-17:40
+108            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+108-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:16:13-70
+109            android:exported="false" />
+109-->[com.huawei.agconnect:agconnect-core:1.0.0.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\128b347358732b08b6fc0307ec5ec8bb\jetified-agconnect-core-1.0.0.300\AndroidManifest.xml:17:13-37
+110
+111        <activity
+111-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:21:9-29:20
+112            android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+112-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:22:13-84
+113            android:configChanges="orientation|screenSize"
+113-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:23:13-59
+114            android:exported="false"
+114-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:24:13-37
+115            android:theme="@style/upsdkDlDialog" >
+115-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:25:13-49
+116            <meta-data
+116-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:18:13-20:77
+117                android:name="hwc-theme"
+117-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:19:17-41
+118                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+118-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:20:17-74
+119        </activity>
+120        <activity
+120-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:30:9-38:20
+121            android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+121-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:31:13-84
+122            android:configChanges="orientation|keyboardHidden|screenSize"
+122-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:32:13-74
+123            android:exported="false"
+123-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:33:13-37
+124            android:theme="@style/upsdkDlDialog" >
+124-->[com.huawei.hms:update:2.0.6.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\0c501c568f46143be489697d449e22c7\jetified-update-2.0.6.300\AndroidManifest.xml:34:13-49
+125            <meta-data
+125-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:18:13-20:77
+126                android:name="hwc-theme"
+126-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:19:17-41
+127                android:value="androidhwext:style/Theme.Emui.Translucent" />
+127-->[com.huawei.hms:ui:4.0.4.300] C:\Users\bwx901761\.gradle\caches\transforms-2\files-2.1\62b851ecedac18d39fe7ee5f63d921fb\jetified-ui-4.0.4.300\AndroidManifest.xml:20:17-74
+128        </activity>
+129    </application>
+130
+131</manifest>
